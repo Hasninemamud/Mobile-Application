@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="textEnd"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="410dp"
+        android:layout_height="60dp"
+        android:background="#3F51B5"
+        android:text="Converter"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="126dp"
+        android:layout_height="39dp"
+        android:text="Conversion:"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="76dp" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="142dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="188dp"
+        android:layout_height="32dp"
+        android:text="Fehrenheit to Celcsius"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="142dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton2"
+        android:layout_width="186dp"
+        android:layout_height="33dp"
+        android:text="Celcsious to Fehrenhite"
+        tools:layout_editor_absoluteX="218dp"
+        tools:layout_editor_absoluteY="142dp" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip"
+        android:layout_width="139dp"
+        android:layout_height="47dp"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="191dp"
+        tools:text="72.5" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip2"
+        android:layout_width="152dp"
+        android:layout_height="49dp"
+        tools:layout_editor_absoluteX="243dp"
+        tools:layout_editor_absoluteY="191dp"
+        tools:text="22.5" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="38dp"
+        android:layout_height="22dp"
+        android:text="="
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="186dp"
+        tools:layout_editor_absoluteY="206dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="341dp"
+        android:layout_height="288dp"
+        android:text="F to C: 72.5 - 22.5"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="332dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONVERTER"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="123dp"
+        tools:layout_editor_absoluteY="264dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
